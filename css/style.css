@@ -97,6 +97,7 @@ button:active {
 
 .kittyButton {
     width: 70px;
+    object-fit: contain;
 }
 button, .kittyButton {
     padding: 0;
