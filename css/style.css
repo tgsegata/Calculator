@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Gamja Flower", serif;
+}
+#bear {
+    width: 430px;
+    height: 430px;
+    margin-bottom: -150px;
+    margin-left: 10px;
+}
+#logoDisplay {
+    width: 180px;
+    height: 40px;
+    background-color: #2d527c;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoDisplay img {
+    width: 100px;
+}
+#calculator {
+    background-color: #e7edf5;
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#display {
+    background-color: #d7e4ef;
+    border: none;
+    width: calc(100% - 105px);
+    padding: 20px;
+    font-size: 3rem;
+    text-align: right;
+    color: #2d527c;
+    font-family: "Gamja Flower", serif;
+
+    margin-top: 40px;
+    border-radius: 40px;
+}
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #f8dcd2;
+    color: #53779f;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Gamja Flower", serif;
+
+    /* to change the cursor when on top */
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.characterCalc {
+    background-color: #f1b7a3;
+    color: #3f648f;
+}
+button:hover {
+    background-color: hsl(16, 73%, 93%);
+}
+button:active {
+    background-color: hsl(16, 73%, 95%);
+}
+.characterCalc:hover {
+    background-color: hsl(15, 74%, 83%);
+}
+.characterCalc:active {
+    background-color: hsl(15, 74%, 90%);
+}
+
+.kittyButton {
+    width: 70px;
+}
+button, .kittyButton {
+    padding: 0;
+}
+
+
+/* MOBILE VERSION /////// */
+@media screen and (max-width: 600px) {
+    /* #calculator {
+        max-width: 300px;
+    }
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    } */
+    
+}
